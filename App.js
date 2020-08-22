@@ -285,7 +285,7 @@ class Content extends React.Component {
         return (                                                                
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-xl-12">
+                    <div className="col-sm-12 col-xl-12">
                         <h3 className="text-center mt-4  mb-5"> Quản lý Sản Phẩm </h3>
                         <button 
                                 type="button" 
@@ -299,7 +299,7 @@ class Content extends React.Component {
                             Tạo mới dữ liệu
                         </button>        
                     </div>      
-                    <div className="col-xl-4">               
+                    <div className="col-sm-4 col-xl-4">               
                         {addForm}
                     </div>
                     <div class={col}>
