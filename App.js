@@ -285,7 +285,7 @@ class Content extends React.Component {
         return (                                                                
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-sm-12 col-xl-12">
+                    <div className="col-sm-12 col-md-12 col-xl-12">
                         <h3 className="text-center mt-4  mb-5"> Quản lý Sản Phẩm </h3>
                         <button 
                                 type="button" 
@@ -299,7 +299,7 @@ class Content extends React.Component {
                             Tạo mới dữ liệu
                         </button>        
                     </div>      
-                    <div className="col-sm-4 col-xl-4">               
+                    <div className="col-sm-12 col-md-8 col-xl-4">               
                         {addForm}
                     </div>
                     <div class={col}>
@@ -367,7 +367,7 @@ class AddProduct extends React.Component {
     render() {
         this.props.isReviceHide(this.state.isDisplayForm)
         return (
-            <div className="card" style={{boxShadow: '8px 8px 12px rgba(0,0,0,.4)', position: 'fixed', width:'30%'}}> 
+            <div className="card" style={{boxShadow: '8px 8px 12px rgba(0,0,0,.4)', }}> 
                 <div className="card-header bg-dark">
                     <button 
                             type="button" 
