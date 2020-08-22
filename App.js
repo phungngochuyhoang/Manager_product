@@ -345,9 +345,9 @@ class AddProduct extends React.Component {
     }
 
     HiddenShowFormAdd = () => {
-        this.setState({
-            isDisplayForm: false
-        })
+            this.setState({
+                isDisplayForm: false
+            })
     }
 
     onHandleChange = (event) => {
@@ -361,7 +361,11 @@ class AddProduct extends React.Component {
 
     submit = (event) => {
         event.preventDefault();
-        this.props.isReviceDataForm(this.state);
+        if(!Number(this.state.price)) {
+            alert('Giá là phải là số!')
+        }else {
+            this.props.isReviceDataForm(this.state);
+        }
     }
 
     render() {
